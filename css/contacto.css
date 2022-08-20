@@ -1,0 +1,82 @@
+.formulario{
+    width: 60%;
+    margin: 2rem auto;
+    border: 1px solid #615344;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.contactanos{
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #615344;
+}
+
+.contactanos__titulo{
+    text-align: center;
+    font-size: 1.6rem;
+    color: #E6C5A1;
+}
+
+.form{
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form__label,
+.grupo__label{
+    padding: .7rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #614627;
+}
+
+.form__input{
+    padding: .7rem;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+}
+
+.grupo{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.grupo__check{
+    width: 20px;
+    height: 20px;
+}
+
+.grupo__select{
+    width: 50%;
+    padding: .7rem;
+}
+
+.form__submit{
+    width: 50%;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: #eee;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #614627;
+}
+
+.form__submit:hover{
+    transform: scale(.9);
+}
+
+@media screen and (max-width:530px) {
+    .formulario{
+        width: 85%;
+    }
+    .form__submit{
+        width: 100%;
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="../img/logo2.PNG">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+    <header class="cabecera">
+        <nav class="nav">
+            <figure class="contenedor-logo">
+                <img src="../img/logo.PNG" class="contenedor-logo__logo" alt="logo de la Barbería Dinastía">
+                <button class="contenedor-logo__btnmenu" id="btnMenu">Menu</button>
+            </figure>
+            
+            <ul class="menu menu--movil">
+                <li class="menu__item"><a href="../index.html" class="menu__item-link">Inicio</a></li>
+                <li class="menu__item"><a href="servicios.html" class="menu__item-link">Servicios</a></li>
+                <li class="menu__item"><a href="contacto.html" class="menu__item-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="formulario">
+
+            <div class="contactanos">
+                <h1 class="contactanos__titulo">Contactanos</h1>
+            </div>
+
+            <form action="#" class="form">
+                <label for="nombre" class="form__label">Nombre completo</label>
+                <input type="text" id="nombre" class="form__input">
+
+                <label for="correo" class="form__label">Correo electrónico</label>
+                <input type="email" name="" id="correo" class="form__input">
+
+                <label for="telefono" class="form__label">Teléfono</label>
+                <input type="tel" name="" id="telefono" class="form__input">
+
+                <label for="mensaje" class="form__label">Mensaje</label>
+                <textarea name="" id="mensaje" cols="30" rows="10" class="form__input"></textarea>
+
+                <fieldset class="grupo">
+                    <legend class="grupo__label">¿Cómo le gustaría que lo contactemos?</legend>
+                    <label for="email" class="grupo__label">
+                        <input type="radio" name="contacto" id="email" class="grupo__check">
+                        Email
+                    </label>
+                    <label for="tel" class="grupo__label">
+                        <input type="radio" name="contacto" id="tel" class="grupo__check">
+                        Teléfono
+                    </label>
+                    <label for="whatsapp" class="grupo__label">
+                        <input type="radio" name="contacto" id="whatsapp" class="grupo__check">
+                        WhatsApp
+                    </label>
+                </fieldset>
+
+                <fieldset class="grupo">
+                    <legend class="grupo__label">¿En cuál horario prefiere ser atendido?</legend>
+                    <select name="" id="" class="grupo__select">
+                        <option value="Mañana">Mañana</option>
+                        <option value="Tarde">Tarde</option>
+                        <option value="Noche">Noche</option>
+                    </select>
+                </fieldset>
+
+                <label for="" class="form__label">
+                    <input type="checkbox" name="" id="">
+                    ¿Le gustaría recibir novedades de la Barbería Dinastía?
+                </label>
+                <input type="submit" value="Enviar formulario" class="form__submit">
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <span class="copyright">&copy Copyright Wilfredo Carías - 2022</span>
+    </footer>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

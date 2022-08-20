@@ -1,0 +1,62 @@
+.servicios{
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 2rem 0;
+}
+
+.tarjeta{
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    width: 250px;
+    padding: 1rem;
+    border: 2px solid #615344;
+    border-radius: 10px;
+    margin: 0 15px;
+    margin-bottom: 10px;
+}
+
+.tarjeta:hover{
+    border: 6px solid #615344;
+}
+
+.tarjeta:hover .tarjeta__titulo{
+    font-size: 2.5rem;
+    color: #615344;
+}
+
+.tarjeta__titulo{
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+.tarjeta__imagen{
+    display: block;
+    width: 100%;
+    animation-name: animar;
+    animation-duration: 4s;
+}
+
+.tarjeta__descripcion,
+.tarjeta__precio{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+@keyframes animar{
+    0%{
+        position: relative;
+        left: -100%;
+    }
+    50%{
+        left: 10%;
+    }
+    100%{
+        left: 20%;
+    }
+}
